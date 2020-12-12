@@ -15,9 +15,39 @@
                     <input type="text" class="form-control" id="secApel">
                 </div>
             </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="priNombre">Primer Nombre</label>
+                    <input type="text" class="form-control" id="priNombre">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="secNombre">Segundo Nombre</label>
+                    <input type="text" class="form-control" id="secNombre">
+                </div>
+            </div>
             <div class="form-group">
-                <label for="inputAddress">Address</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                <label for="pais">Pais del Empleo</label>
+                    <select id="pais" class="form-control">
+                        <option selected>Seleccione...</option>
+                        <option>Colombia</option>
+                        <option>Estados Unidos</option>
+                    </select>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="tipoId">Tipo de Identificación</label>
+                    <select id="tipoId" class="form-control">
+                        <option selected>Seleccione...</option>
+                        <option>Cédula Ciudadanía</option>
+                        <option>Cédula Extranjería</option>
+                        <option>Pasaporte</option>
+                        <option>Permiso Especial</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="nroId">Número Documento</label>
+                    <input type="number" class="form-control" id="nroId" name="nroId" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+                </div>
             </div>
             <div class="form-group">
                 <label for="inputAddress2">Address 2</label>
